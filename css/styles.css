@@ -12,6 +12,10 @@
     padding: 2.5rem 0;
   }
 
+  figcaption {
+    font-size: 1.55rem;
+  }
+
   #search {
     width: 52rem;
     height: 5rem;
