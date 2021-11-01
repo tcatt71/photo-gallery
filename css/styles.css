@@ -33,7 +33,7 @@ figcaption {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, 200px);
   gap: var(--grid-gap);
   margin-bottom: var(--grid-gap);
 }
