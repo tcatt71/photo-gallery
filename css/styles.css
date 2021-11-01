@@ -1,92 +1,39 @@
+:root {
+  --grid-gap: 2.5rem;
+}
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  html {
-    font-size: 62.5%;
-  }
+html {
+  font-size: 62.5%;
+}
 
-  .container {
-    margin: auto;
-    max-width: calc(800px + 7.5em);
-    padding: 2.5rem 0;
-  }
+.container {
+  margin: auto;
+  max-width: calc(800px + (3 * var(--grid-gap)));
+}
 
-  figcaption {
-    font-size: 1.55rem;
-  }
+figcaption {
+  font-size: 1.55rem;
+}
 
-  #search {
-    width: 52rem;
-    height: 5rem;
-    margin: auto;
-    border-radius: 0.5rem;
-    border-color: lightgrey;
-    border-style: solid;
-    text-indent: 1rem;
-  }
+#search {
+  display: block;
+  width: 52rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  border-color: lightgrey;
+  border-style: solid;
+  text-indent: 1rem;
+  margin: var(--grid-gap) auto;
 
-  .search-box {
-    display: flex;
-    align-items: flex-end;
-    grid-area: search;
-  }
+}
 
-  .thumbnail-01 {
-    grid-area: thumbnail01;
-  }
-
-  .thumbnail-02 {
-    grid-area: thumbnail02;
-  }
-
-  .thumbnail-03 {
-    grid-area: thumbnail03;
-  }
-
-  .thumbnail-04 {
-    grid-area: thumbnail04;
-  }
-
-  .thumbnail-05 {
-    grid-area: thumbnail05;
-  }
-
-  .thumbnail-06 {
-    grid-area: thumbnail06;
-  }
-
-  .thumbnail-07 {
-    grid-area: thumbnail07;
-  }
-
-  .thumbnail-08 {
-    grid-area: thumbnail08;
-  }
-
-  .thumbnail-09 {
-    grid-area: thumbnail09;
-  }
-
-  .thumbnail-10 {
-    grid-area: thumbnail10;
-  }
-
-  .thumbnail-11 {
-    grid-area: thumbnail11;
-  }
-
-  .thumbnail-12 {
-    grid-area: thumbnail12;
-  }
-
-  .photo-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2.5rem;
-    grid-template-areas:
-      "search search search search"
-      "thumbnail01 thumbnail02 thumbnail03 thumbnail04"
-      "thumbnail05 thumbnail06 thumbnail07 thumbnail08"
-      "thumbnail09 thumbnail10 thumbnail11 thumbnail12";
-  }
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--grid-gap);
+  margin-bottom: var(--grid-gap);
+}
