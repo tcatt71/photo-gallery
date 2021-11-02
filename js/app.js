@@ -9,7 +9,7 @@ function handleSearchOnKeyUp() {
       cards[i].style.display = 'none';
     }
     for (let i = 0; i < cards.length; i++) {
-      if (cards[i].getAttribute('data-caption').toLowerCase().includes(searchField.value)) {
+      if (cards[i].getAttribute('data-caption').toLowerCase().includes(searchField.value.toLowerCase())) {
         cards[i].style.display = 'inline';
       }
     }
