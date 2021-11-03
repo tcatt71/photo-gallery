@@ -43,6 +43,8 @@ figcaption {
   grid-template-columns: repeat(auto-fit, 20rem);
   gap: var(--grid-gap);
   margin-bottom: var(--grid-gap);
+  justify-content: center;
+}
 
 .photo-gallery a {
   height: 20rem;
