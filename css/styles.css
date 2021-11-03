@@ -10,13 +10,19 @@ html {
   font-size: 62.5%;
 }
 
-.container {
-  margin: auto;
-  max-width: calc(800px + (3 * var(--grid-gap)));
+
+img {
+  width: 20rem;
+  height: 20rem;
 }
 
 figcaption {
   font-size: 1.55rem;
+}
+
+.container {
+  margin: auto;
+  max-width: calc(80rem + (3 * var(--grid-gap)));
 }
 
 #search {
@@ -34,7 +40,7 @@ figcaption {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 20rem);
   gap: var(--grid-gap);
   margin-bottom: var(--grid-gap);
 }
