@@ -9,7 +9,9 @@ function handleSearchOnKeyUp() {
       const cardCaption = cards[i].getAttribute('data-caption').toLowerCase();
       const searchParam = searchField.value.toLowerCase();
 
-      if (!cardCaption.includes(searchParam)) {
+      if (cardCaption.includes(searchParam)) {
+        cards[i].style.display = 'inline';
+      } else {
         cards[i].style.display = 'none';
       }
     }
