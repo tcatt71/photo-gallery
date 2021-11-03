@@ -34,8 +34,7 @@ figcaption {
   border-color: lightgrey;
   border-style: solid;
   text-indent: 1rem;
-  margin: var(--grid-gap) auto;
-
+  margin: 2.5rem auto;
 }
 
 .photo-gallery {
