@@ -21,7 +21,8 @@ figcaption {
 
 #search {
   display: block;
-  width: 52rem;
+  width: 59.5%;
+  min-width: 20rem;
   height: 5rem;
   border-radius: 0.5rem;
   border-color: lightgrey;
