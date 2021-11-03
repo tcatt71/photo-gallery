@@ -6,14 +6,11 @@ const cards = document.getElementsByTagName('a');
 function handleSearchOnKeyUp() {
   searchField.addEventListener('keyup', () => {
     for (let i = 0; i < cards.length; i++) {
-      cards[i].style.display = 'none';
-    }
-    for (let i = 0; i < cards.length; i++) {
       const cardCaption = cards[i].getAttribute('data-caption').toLowerCase();
       const searchParam = searchField.value.toLowerCase();
 
-      if (cardCaption.includes(searchParam)) {
-        cards[i].style.display = 'inline';
+      if (!cardCaption.includes(searchParam)) {
+        cards[i].style.display = 'none';
       }
     }
   });
