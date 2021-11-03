@@ -5,9 +5,10 @@ const cards = document.getElementsByTagName('a');
 
 function handleSearchOnKeyUp() {
   searchField.addEventListener('keyup', () => {
+    const searchParam = searchField.value.toLowerCase();
+
     for (let i = 0; i < cards.length; i++) {
       const cardCaption = cards[i].getAttribute('data-caption').toLowerCase();
-      const searchParam = searchField.value.toLowerCase();
 
       if (cardCaption.includes(searchParam)) {
         cards[i].style.display = 'inline';
